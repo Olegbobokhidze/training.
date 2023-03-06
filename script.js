@@ -24,3 +24,31 @@ const oddOrEven = (arr) => {
   const sum = arr.reduce((acc, curr) => acc + curr, 0);
   return sum % 2 === 0 ? "odd" : "even";
 };
+
+// fourth
+
+const funcc = () => {
+  const charCounts = {};
+  word = word.toLowerCase();
+  for (let i = 0; i < word.length; i++) {
+    const char = word[i];
+    if (char in charCounts) {
+      charCounts[char]++;
+    } else {
+      charCounts[char] = 1;
+    }
+  }
+
+  // Create the output string based on the character counts
+  let result = "";
+  for (let i = 0; i < word.length; i++) {
+    const char = word[i];
+    if (charCounts[char] > 1) {
+      result += ")";
+    } else {
+      result += "(";
+    }
+  }
+
+  return result;
+};
