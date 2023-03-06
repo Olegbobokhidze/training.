@@ -18,3 +18,9 @@ const sum = (arr) => {
     : 0;
 };
 sum([1, 2, 3, 5, 6]);
+
+// third
+const oddOrEven = (arr) => {
+  const sum = arr.reduce((acc, curr) => acc + curr, 0);
+  return sum % 2 === 0 ? "odd" : "even";
+};
