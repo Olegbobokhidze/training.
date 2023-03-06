@@ -53,6 +53,8 @@ const funcc = () => {
   return result;
 };
 
+// fifth
+
 const sumOfTrue = (arr) => {
   const values = arr.filter((val) => (val ? val : null));
   return values.length;
